@@ -1,39 +1,28 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Home from "./views/Home";
+import "./App.css"
 
 export default function App() {
     return (
         <Router>
             <div>
-                <nav>
-                    <ul>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/streams">Streams</Link>
-                        </li>
-                    </ul>
-                </nav>
-
-                {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
+                <Link to="/" class="abcdef">Home</Link>
+                <Link to="/streams" class="abcdef">Streams</Link>
                 <Switch>
-                    <Route path="/">
+                    <Route exact path="/">
                         <Home />
-                    </Route>
-                    <Route path="/streams">
+                    </Route>   
+                    <Route exact path="/streams">
                         <Streams />
                     </Route>
+                                     
                 </Switch>
             </div>
         </Router>
     );
 }
 
-function Home() {
-    return <h2>Home</h2>;
-}
 
 function Streams() {
     return <h2>Streams</h2>;
