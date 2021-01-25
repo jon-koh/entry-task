@@ -1,0 +1,39 @@
+/*.stream-card {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}*/
+
+.stream-card {
+    height: 185px;
+    margin: 0px;
+    padding: 10px;   
+}
+
+.stream-card-content {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 6px;
+    margin: 0px;
+}
+
+.stream-card-thumbnail {
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.stream-card-details {
+    padding: 10px;
+}
+
+.stream-card-details-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.stream-card-details-description {
+    font-size: 14px;
+    color: rgba(22, 24, 26, 0.45);
+}

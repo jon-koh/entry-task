@@ -1,0 +1,38 @@
+.hot-clips {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-height: 33%;
+    height: auto;
+    background-color: #f5f6fa;
+}
+
+.header {
+    display: block;
+    width: 1200px;
+    padding: 10px;
+    padding-top: 20px !important;
+}
+
+.title {
+}
+
+.view-more {
+                float: right;
+                color: #16181a;
+                background-color: white;
+                outline: 0;
+                -moz-transition: background-color 0.5s ease;
+                -o-transition: background-color 0.5s ease;
+                -webkit-transition: background-color 0.5s ease;
+                transition: background-color 0.5s ease;
+                border: 1px solid #dbe2e9;
+                border-radius: 60px;
+                padding: 7px 16px 6px 16px;
+                font-size: 12px;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            .view-more:hover {
+                background-color: #dbe2e9;
+            }

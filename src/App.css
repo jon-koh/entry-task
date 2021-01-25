@@ -40,3 +40,7 @@
 a, .abcdef {
   text-decoration: none;
 }
+
+#root {
+    background-color: #f5f6fa;
+}

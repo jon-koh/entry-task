@@ -1,0 +1,10 @@
+.carousel {
+    width: 1200px;
+    min-height: 33%;
+    margin: 0 auto;
+}
+
+.carousel-content {
+    background-color: yellow;
+    height: 33%;
+}
