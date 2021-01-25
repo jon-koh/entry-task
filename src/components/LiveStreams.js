@@ -1986,9 +1986,7 @@ function LiveStreams() {
                 </Link>
 		    </div>
 		    <br/>
-		    <div class="stream-list section-list">	
-		    	<StreamList list={data} count={count} />
-		    </div>
+	    	<StreamList list={data} count={count} />
 		</div>
 	);
 }

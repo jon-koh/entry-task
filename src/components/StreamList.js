@@ -2,15 +2,12 @@ import StreamCard from "./StreamCard"
 
 function StreamList(props) {
 	const data = props.list;
-	console.log("hi");
-	console.log(data);
 	const count = props.count;
+	let list = data;
 	if (!!count) {
-		return data.slice(0, count).map((stream, index) => <StreamCard stream={stream} key={index} />)
+		list = list.slice(0, count)
 	}
-	else {
-		return data.map((stream, index) => <StreamCard stream={stream} key={index} />)
-	}
+	return <div class = "stream-list section-list">{list.map((stream, index) => <StreamCard stream={stream} key={index} />)}</div>;
 }
 
 export default StreamList;
