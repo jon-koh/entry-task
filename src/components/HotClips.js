@@ -15,16 +15,7 @@ function HotClips() {
                 </button>
 		    </div>
 		    <br/>
-		    <div class="stream-list section-list">	    	
-			    <StreamCard />
-
-			    <StreamCard />
-
-			    <StreamCard />
-
-			    <StreamCard />
-
-			    <StreamCard />
+		    <div class="stream-list section-list">
 		    </div>
 		</div>
 	);

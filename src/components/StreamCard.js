@@ -2,21 +2,21 @@ import "./StreamCard.css"
 import StreamCardThumbnail from "../169.png"
 
 function StreamCard(props) {
-	const index = props.id;
-	console.log(index);
-	// const title =props.stream.title;
-	// const description = props.stream.description;
+	const stream = props.stream; //works
+	const thumbnailSrc = stream.channel.thumbnail;
+	const title = stream.channel.name;
+	const description = stream.channel.description;
     return (
     	<div class="stream-card card">
 		    <div class="stream-card-content">
-		        <img alt="" class="stream-card-thumbnail" src="{StreamCardThumbnail}"/>
+		        <img alt="" class="stream-card-thumbnail" src={thumbnailSrc}/>
 		        <div class="stream-card-details">
 		            <span class="stream-card-details-title">
-		                {index}
+		            	{title}
 		            </span>
 		            <br/>
 		            <span class="stream-card-details-description">
-		            	something
+		            	{description}
 		            </span>
 		        </div>
 		    </div>
