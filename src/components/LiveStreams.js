@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Home from "../views/Home";
 import "../App.css"
 import Streams from "../views/Streams"
+import StreamList from "./StreamList"
 
 function LiveStreams() {
 	const response = {
@@ -1986,12 +1987,11 @@ function LiveStreams() {
 		    </div>
 		    <br/>
 		    <div class="stream-list section-list">	
-	     	{
-	     		data.slice(0, count).map((stream, index) => <StreamCard stream={stream} key={index} />)
-	     	}  	    
+		    	<StreamList list={data} count={count} />
 		    </div>
 		</div>
 	);
 }
 
 export default LiveStreams;
+

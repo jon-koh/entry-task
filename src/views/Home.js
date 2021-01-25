@@ -1,4 +1,3 @@
-import StreamCard from "../components/StreamCard"
 import "./Home.css"
 import Carousel from "../components/Carousel"
 import LiveStreams from "../components/LiveStreams"
