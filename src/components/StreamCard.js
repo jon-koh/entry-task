@@ -5,7 +5,6 @@ function StreamCard(props) {
 	const thumbnailSrc = stream.channel.thumbnail;
 	const title = stream.channel.name;
 	const description = stream.channel.description;
-	console.log(thumbnailSrc + title + description);
 	return (
     	<div class="stream-card card">
 		    <div class="stream-card-content">

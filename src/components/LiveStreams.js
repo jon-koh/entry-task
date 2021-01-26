@@ -1969,6 +1969,11 @@ function LiveStreams() {
 	  ],
 	  "version": 1552119405
 	};
+	fetch("https://test.connect.booyah.live/api/v3/streams?cursor=0&count=50&lang=en", {
+		headers: {
+			"content-type": "application/json; charset=UTF-8",
+			"cookies": "session_key=MTYxMTU3MDk0OXxOd3dBTkRSVVEwSlVNMDlNVGtwSFRsWkZTMHMzVmpOYU5rOUlXbG8xTlZSQ1YxUlNTRTVPUWs1RFJVUlVUa1ZLU0VkTFVWYzBXVkU9fD7IYBbrjKOiBeUcN8zKAN-Rc2WaMhjN5P_yumHB3ftD"
+		}});
 	const data = response.stream_list;
 	const count = 10;
     return (
@@ -1976,7 +1981,7 @@ function LiveStreams() {
 		    <div class="header">
 		        <span class="title">
 		            <b>
-		                Live Streams
+		                Live Strams
 		            </b>
 		        </span>
 		        <Link to="/streams" class="abcdef">
@@ -1992,4 +1997,3 @@ function LiveStreams() {
 }
 
 export default LiveStreams;
-
