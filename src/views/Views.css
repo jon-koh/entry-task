@@ -48,6 +48,7 @@ a, .abcdef {
 
 .section-list {
     display: flex !important;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -59,7 +60,9 @@ a, .abcdef {
 .stream-list {
     width: 1200px;
     height: auto;
+    justify-content: space-around;   
     margin: 0 auto;
+    padding-top: 10px;
 }
 
 .stream-list .header {
