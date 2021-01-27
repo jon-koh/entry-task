@@ -4,7 +4,7 @@ function StreamCard(props) {
 	const stream = props.stream; 
 	const thumbnailSrc = stream.stream.snapshot || stream.channel.thumbnail;
 	const title = stream.channel.name;
-	const description = stream.channel.description;
+	const description = stream.user.nickname;
 	return (
     	<div class="stream-card card">
 		    <div class="stream-card-content">

@@ -7,7 +7,7 @@ function StreamSection(props) {
 		    <div class="header">
 		        <span class="title">
 		            <b>
-		                Live StreamListams
+		                Live Streams
 		            </b>
 		        </span>
 		        <Link to="/streams" class="abcdef">
