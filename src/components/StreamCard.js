@@ -1,8 +1,8 @@
 import "./StreamCard.css"
 
 function StreamCard(props) {
-	const stream = props.stream; //works
-	const thumbnailSrc = stream.channel.thumbnail;
+	const stream = props.stream; 
+	const thumbnailSrc = stream.stream.snapshot || stream.channel.thumbnail;
 	const title = stream.channel.name;
 	const description = stream.channel.description;
 	return (
