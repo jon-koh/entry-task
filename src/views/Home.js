@@ -1,4 +1,4 @@
-import "./Home.css"
+import "./Views.css"
 import Carousel from "../components/Carousel"
 import LiveStreams from "../components/LiveStreams"
 import HotClips from "../components/HotClips"

@@ -1,7 +1,7 @@
 import "./LiveStreams.css"
 import React from "react";
-import "../App.css"
-import StreamSection from "./StreamSection"
+import StreamList from "./StreamList"
+import {Link} from "react-router-dom"
 import { useAsync } from 'react-async';
 
 const GetData = async () => 
@@ -18,10 +18,24 @@ function LiveStreams() {
 	if (error) return `died ${error.message}`;
 	if (data) {
 		return (
-			<StreamSection count={count} data={data.stream_list}/>
+			<div class="live-streams section">
+			    <div class="header">
+			        <span class="title">
+			            <b>
+			                Live Streams
+			            </b>
+			        </span>
+			        <Link to="/streams" class="abcdef">
+		                <button class="view-more">
+		                    View More
+		                </button>
+		            </Link>
+			    </div>
+		    	<StreamList list={data.stream_list} count={count} />
+			</div>			
 		);
 	}
-	return "wait";
+	return null;
 }
 
 export default LiveStreams;
