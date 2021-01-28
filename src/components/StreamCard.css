@@ -1,10 +1,13 @@
 .stream-card {
-    height: 185px;
+/*    height: 300px;
+*/    max-width: 220px;
     margin: 0px;
     padding: 10px;   
 }
 
 .stream-card-content {
+    display: flex;
+    flex-direction: column;
 /*    height: 100%;
 */    width: 100%;
     background-color: white;

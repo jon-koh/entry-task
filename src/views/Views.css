@@ -5,11 +5,21 @@ body, html {
 /*    font-family: 'Open Sans';
 */}
 
+body::-webkit-scrollbar {
+    display: none;
+    background-color: #f5f6fa;
+}
+
+.example {
+ /* Firefox */
+}
+
 a, .abcdef {
   text-decoration: none;
 }
 
 #root {
+    height: 100%;
     background-color: #f5f6fa;
 }
 
@@ -48,13 +58,13 @@ a, .abcdef {
 
 .section-list {
     display: flex !important;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
 .section-list .card {
     flex: 1;
-    min-width: 200px;
+    min-width: 250px;
 }
 
 .stream-list {
@@ -63,6 +73,9 @@ a, .abcdef {
     justify-content: space-around;   
     margin: 0 auto;
     padding-top: 10px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; 
+    background-color: #f5f6fa;
 }
 
 .stream-list .header {
